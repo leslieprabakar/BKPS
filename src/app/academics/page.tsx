@@ -38,7 +38,7 @@ const AcademicsPage = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Where learning is an adventure! We provide state-of-the-art facilities to spark curiosity and foster growth.
+            Where learning is an adventure! We welcome students from all regions of India and provide state-of-the-art facilities to spark curiosity and foster growth.
           </motion.p>
         </div>
       </section>

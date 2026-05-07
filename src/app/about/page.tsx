@@ -70,7 +70,7 @@ const AboutPage = () => {
             </div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">Our Vision</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              To be a beacon of early childhood education rooted in Indian values, fostering a generation of creative, confident, and compassionate individuals who are lifelong learners and responsible global citizens.
+              To be a beacon of inclusive early childhood education - welcoming students of all religions, regions, and backgrounds. We foster a generation of creative, confident, and compassionate individuals who are lifelong learners and responsible citizens of India.
             </p>
           </motion.div>
 
@@ -83,7 +83,7 @@ const AboutPage = () => {
             </div>
             <h2 className="text-3xl font-bold text-pink-600 mb-4">Our Mission</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              To provide a safe, nurturing, and stimulating environment where children explore their potential through play-based learning, artistic expression, and social interaction - while embracing our rich Indian heritage.
+              To provide a safe, nurturing, and stimulating environment for ALL children - regardless of religion, region, caste, or background. Every child is equal here. We help children explore their potential through play-based learning, artistic expression, and social interaction.
             </p>
           </motion.div>
         </div>

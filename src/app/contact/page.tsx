@@ -26,7 +26,7 @@ const ContactPage = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            Have questions? We'd love to hear from you! Reach out to us and we'll get back to you as soon as possible.
+            We welcome students from ALL religions and backgrounds. Have questions? We'd love to hear from you!
           </motion.p>
         </div>
       </section>
