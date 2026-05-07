@@ -26,7 +26,7 @@ const AdmissionPage = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            We welcome ALL children regardless of religion, region, or background. Join our inclusive family where every child is equal and cherished!
+            We welcome children from every background. Join our family where every child is equal and cherished!
           </motion.p>
         </div>
       </section>

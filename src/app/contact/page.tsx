@@ -26,7 +26,7 @@ const ContactPage = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-gray-600 max-w-2xl mx-auto"
           >
-            We welcome students from ALL religions and backgrounds. Have questions? We'd love to hear from you!
+            We welcome families from all over India. Have questions? We'd love to hear from you!
           </motion.p>
         </div>
       </section>

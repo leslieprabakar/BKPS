@@ -18,7 +18,7 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-pink-600">Blessing Kids Play School</h3>
             <p className="text-gray-600">
               Nurturing young minds with love, care, and a passion for learning. 
-              All religions, all regions, all backgrounds - EVERY CHILD IS EQUAL HERE!
+              Children from every background learn together as one family!
             </p>
             <div className="flex gap-4">
               <div className="p-2 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow cursor-pointer">

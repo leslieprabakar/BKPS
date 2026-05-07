@@ -42,7 +42,7 @@ const CampusPage = () => {
           >
             <h2 className="text-4xl font-bold text-gray-800 mb-4">A Home Away From Home</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our campus is more than just a building; it's a vibrant ecosystem where ALL children feel secure and happy - regardless of religion, region, or background. Every corner is designed with safety and creativity in mind. We celebrate festivals from ALL religions - Diwali, Eid, Christmas, Pongal, Holi, and more!
+              Our campus is more than just a building; it's a vibrant ecosystem where every child feels secure and happy. Every corner is designed with safety and creativity in mind. We celebrate all major festivals - Diwali, Eid, Christmas, Pongal, Holi, Onam, and more!
             </p>
             <div className="space-y-4">
               {[

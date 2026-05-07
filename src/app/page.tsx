@@ -60,7 +60,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: <BookOpen className="text-blue-500" />, title: "Creative Learning", desc: "Interactive lessons that spark imagination and curiosity.", color: "bg-blue-50" },
-              { icon: <Palette className="text-pink-500" />, title: "All Are Equal", desc: "No discrimination - students from all religions, regions & backgrounds learn together as one family.", color: "bg-pink-50" },
+              { icon: <Palette className="text-pink-500" />, title: "One Family", desc: "Children from all over India learn together as one big family.", color: "bg-pink-50" },
               { icon: <Music className="text-purple-500" />, title: "Music & Dance", desc: "Classical dance (Bharatanatyam), folk songs from all regions, and fun rhymes.", color: "bg-purple-50" },
               { icon: <Trophy className="text-yellow-500" />, title: "Yoga & Sports", desc: "Surya Namaskar, traditional games from all over India, and fun physical activities.", color: "bg-yellow-50" },
             ].map((feature, index) => (
