@@ -35,9 +35,9 @@ const ContactPage = () => {
       <section className="py-20 px-4 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { icon: <Phone className="text-pink-500" />, title: "Call Us", detail: "+91 429 2234567", desc: "Mon-Fri: 8 AM - 5 PM", color: "bg-pink-50" },
-            { icon: <Mail className="text-blue-500" />, title: "Email Us", detail: "info@blessingkids.edu.in", desc: "Response within 24 hours", color: "bg-blue-50" },
-            { icon: <MapPin className="text-yellow-500" />, title: "Visit Us", detail: "Plot No. 12, White Town, Near Promenade Beach, Pondicherry - 605001", desc: "Open for tours by appointment", color: "bg-yellow-50" },
+            { icon: <Phone className="text-pink-500" />, title: "Call Us", detail: "+91 98765 43210", desc: "Mon-Sat: 9 AM - 5 PM", color: "bg-pink-50" },
+            { icon: <Mail className="text-blue-500" />, title: "Email Us", detail: "info@blessingkidsschool.in", desc: "Response within 24 hours", color: "bg-blue-50" },
+            { icon: <MapPin className="text-yellow-500" />, title: "Visit Us", detail: "No. 25, MG Road, Near Bus Stand, Puducherry - 605001", desc: "Open for tours by appointment", color: "bg-yellow-50" },
           ].map((item, index) => (
             <motion.div 
               key={index}
@@ -87,7 +87,7 @@ const ContactPage = () => {
       <section className="py-20 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Find Us Here</h2>
-          <p className="text-gray-600">Our school is located in the heart of Education City</p>
+          <p className="text-gray-600">Our school is located in the heart of Puducherry (Formerly Pondicherry)</p>
         </div>
         <div className="aspect-video bg-gray-200 rounded-3xl overflow-hidden shadow-lg border-4 border-white relative">
           <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">

@@ -8,24 +8,24 @@ const AboutPage = () => {
   const messages = [
     {
       role: "Chairman",
-      name: "Dr. Rajesh Sharma",
-      message: "Our vision is to create a sanctuary of learning where every child feels valued and inspired. We believe that the early years are the most critical in shaping a child's future, and we are committed to providing a world-class foundation built on love and curiosity.",
+      name: "Dr. Rajesh Kumar",
+      message: "Our vision is to create a sanctuary of learning where every child feels valued and inspired. Rooted in Indian values with a global perspective, we prepare our children for the future while preserving our rich cultural heritage.",
       color: "bg-blue-50",
       borderColor: "border-blue-200",
       textColor: "text-blue-600"
     },
     {
       role: "Director",
-      name: "Mr. Amit Verma",
-      message: "At Blessing Kids, we don't just teach; we nurture. Our approach combines modern pedagogy with a heartfelt commitment to each child's emotional and social growth. We welcome you to join our family and watch your child bloom.",
+      name: "Mr. Venkatraman",
+      message: "At Blessing Kids, we don't just teach; we nurture. Our approach combines modern Montessori methods with traditional Indian values like respect, discipline, and unity. We welcome you to join our family.",
       color: "bg-pink-50",
       borderColor: "border-pink-200",
       textColor: "text-pink-600"
     },
     {
       role: "Principal",
-      name: "Mrs. Sunita Iyer",
-      message: "Every day at our school is a new adventure. From the first giggle in the classroom to the first word read, we celebrate every milestone. Our dedicated staff ensures a safe, happy, and stimulating environment for all our little stars.",
+      name: "Mrs. Lakshmi Narayanan",
+      message: "Every day at our school is a new adventure. From the first Om in the morning assembly to the first word read, we celebrate every milestone. Our dedicated staff ensures a safe, happy, and stimulating environment.",
       color: "bg-yellow-50",
       borderColor: "border-yellow-200",
       textColor: "text-yellow-600"
@@ -70,7 +70,7 @@ const AboutPage = () => {
             </div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">Our Vision</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              To be a beacon of early childhood education, fostering a generation of creative, confident, and compassionate individuals who are lifelong learners and global citizens.
+              To be a beacon of early childhood education rooted in Indian values, fostering a generation of creative, confident, and compassionate individuals who are lifelong learners and responsible global citizens.
             </p>
           </motion.div>
 
@@ -83,7 +83,7 @@ const AboutPage = () => {
             </div>
             <h2 className="text-3xl font-bold text-pink-600 mb-4">Our Mission</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              To provide a safe, nurturing, and stimulating environment where children can explore their potential through play-based learning, artistic expression, and social interaction.
+              To provide a safe, nurturing, and stimulating environment where children explore their potential through play-based learning, artistic expression, and social interaction - while embracing our rich Indian heritage.
             </p>
           </motion.div>
         </div>

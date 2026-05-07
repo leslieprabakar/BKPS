@@ -45,9 +45,9 @@ const Footer = () => {
           
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-gray-800">Contact Us</h4>
-            <p className="text-gray-600">Plot No. 12, White Town, Near Promenade Beach, Pondicherry - 605001</p>
-            <p className="text-gray-600">Phone: +91 429 2234567</p>
-            <p className="text-gray-600">Email: info@blessingkids.edu.in</p>
+            <p className="text-gray-600">No. 25, MG Road, Near Bus Stand, Puducherry - 605001</p>
+            <p className="text-gray-600">Phone: +91 98765 43210</p>
+            <p className="text-gray-600">Email: info@blessingkidsschool.in</p>
           </div>
         </div>
         

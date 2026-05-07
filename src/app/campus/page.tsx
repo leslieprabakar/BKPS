@@ -42,7 +42,7 @@ const CampusPage = () => {
           >
             <h2 className="text-4xl font-bold text-gray-800 mb-4">A Home Away From Home</h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our campus is more than just a building; it's a vibrant ecosystem where children feel secure and happy. Every corner is designed with safety and creativity in mind.
+              Our campus is more than just a building; it's a vibrant ecosystem where children feel secure and happy. Every corner is designed with safety and creativity in mind. We celebrate all Indian festivals - Diwali, Holi, Pongal, and more!
             </p>
             <div className="space-y-4">
               {[
@@ -82,7 +82,7 @@ const CampusPage = () => {
               { title: "Creative Corner", desc: "Where art, music, and imagination come to life.", color: "bg-blue-100" },
               { title: "Reading Nook", desc: "A quiet, cozy space for early literacy and storytelling.", color: "bg-yellow-100" },
               { title: "The Garden", desc: "Learning about nature through gardening and outdoor exploration.", color: "bg-green-100" },
-              { title: "Dining Hall", desc: "A clean and healthy space for nutritious meals and table manners.", color: "bg-purple-100" },
+              { title: "Dining Hall", desc: "Healthy Indian vegetarian meals with South Indian specials.", color: "bg-purple-100" },
               { title: "Nap Area", desc: "A peaceful environment for well-deserved rest and rejuvenation.", color: "bg-orange-100" },
             ].map((facility, i) => (
               <motion.div 

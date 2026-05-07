@@ -13,7 +13,7 @@ const AcademicsPage = () => {
     { name: "Computer Lab", icon: <Cpu className="text-purple-500" />, desc: "Introduction to digital creativity and basic coding for kids.", color: "bg-purple-50" },
     { name: "Library", icon: <Book className="text-yellow-500" />, desc: "A cozy corner for storytelling and discovering new worlds.", color: "bg-yellow-50" },
     { name: "Yoga Studio", icon: <Flower2 className="text-indigo-500" />, desc: "Mindfulness and flexibility for a healthy mind and body.", color: "bg-indigo-50" },
-    { name: "English Hub", icon: <Languages className="text-pink-500" />, desc: "Developing communication skills through phonics and drama.", color: "bg-pink-50" },
+    { name: "Language Lab (Hindi & Tamil)", icon: <Languages className="text-pink-500" />, desc: "Learning regional languages - Hindi and Tamil with fun activities.", color: "bg-pink-50" },
     { name: "Sports Arena", icon: <Trophy className="text-orange-500" />, desc: "Physical education and team games to build strength and spirit.", color: "bg-orange-50" },
   ];
 
@@ -84,9 +84,9 @@ const AcademicsPage = () => {
               <ul className="space-y-4">
                 {[
                   "Indoor Play Area with safe cushioning",
-                  "Mini Football and Basketball courts",
-                  "Rhythmic Gymnastics and Yoga",
-                  "Annual Sports Day celebrations"
+                  "Traditional Indian Sports - Kabaddi & Kho-Kho",
+                  "Yoga and Meditation (Surya Namaskar)",
+                  "Annual Sports Day celebrations (Annual Sports Meet)"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-700 font-medium">
                     <div className="bg-blue-500 rounded-full p-1">

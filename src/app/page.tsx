@@ -29,7 +29,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto font-medium">
-              A magical world where curiosity meets creativity. We nurture your little stars with love, laughter, and a lifetime of learning! 🌟
+              A magical world where curiosity meets creativity. Rooted in Indian values, we nurture your little stars with love, laughter, and a lifetime of learning! 🌟
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
@@ -60,9 +60,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: <BookOpen className="text-blue-500" />, title: "Creative Learning", desc: "Interactive lessons that spark imagination and curiosity.", color: "bg-blue-50" },
-              { icon: <Palette className="text-pink-500" />, title: "Arts & Crafts", desc: "Exploring colors and shapes through hands-on artistic activities.", color: "bg-pink-50" },
-              { icon: <Music className="text-purple-500" />, title: "Music & Dance", desc: "Rhythmic movements and melodies to develop coordination.", color: "bg-purple-50" },
-              { icon: <Trophy className="text-yellow-500" />, title: "Sports & Play", desc: "Physical activities to ensure healthy growth and teamwork.", color: "bg-yellow-50" },
+              { icon: <Palette className="text-pink-500" />, title: "Rangoli & Crafts", desc: "Traditional Indian art forms including rangoli, rangoli, and handmade decorations.", color: "bg-pink-50" },
+              { icon: <Music className="text-purple-500" />, title: "Music & Dance", desc: "Classical dance (Bharatanatyam), folk songs, and fun rhymes.", color: "bg-purple-50" },
+              { icon: <Trophy className="text-yellow-500" />, title: "Yoga & Sports", desc: "Surya Namaskar, traditional games, and fun physical activities.", color: "bg-yellow-50" },
             ].map((feature, index) => (
               <motion.div 
                 key={index}
@@ -116,7 +116,7 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold mb-6">Ready to start the journey?</h2>
-          <p className="text-xl mb-10 opacity-90">Give your child the best start in life with a nurturing and playful environment.</p>
+          <p className="text-xl mb-10 opacity-90">Give your child the best start in life with Indian values, modern learning, and a nurturing environment.</p>
           <Link 
             href="/admission" 
             className="px-10 py-4 bg-yellow-400 text-blue-900 rounded-full font-extrabold text-xl hover:bg-yellow-300 transition-all transform hover:scale-110 shadow-xl"

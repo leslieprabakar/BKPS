@@ -82,7 +82,7 @@ const AdmissionPage = () => {
             </div>
             <div className="space-y-2">
               <label className="text-sm font-bold text-gray-700">Phone Number</label>
-              <input type="tel" placeholder="+1 234 567 890" className="w-full p-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-pink-400 outline-none transition-all" />
+              <input type="tel" placeholder="+91 98765 43210" className="w-full p-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-pink-400 outline-none transition-all" />
             </div>
             <div className="md:col-span-2 space-y-2">
               <label className="text-sm font-bold text-gray-700">Email Address</label>
