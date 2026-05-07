@@ -6,7 +6,7 @@ import { CheckCircle, FileText, User, Mail, Phone, MapPin, Send } from 'lucide-r
 
 const AdmissionPage = () => {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-blue-50 font-playful">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-br from-pink-100 via-yellow-50 to-blue-100 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-30">
@@ -63,7 +63,7 @@ const AdmissionPage = () => {
       </section>
 
       {/* Application Form Section */}
-      <section className="py-20 bg-gray-50 px-4">
+      <section className="py-20 bg-gradient-to-r from-yellow-50 via-pink-50 to-purple-50 px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-pink-100">
           <div className="bg-pink-500 p-8 text-white text-center">
             <h2 className="text-3xl font-bold">Admission Inquiry Form</h2>

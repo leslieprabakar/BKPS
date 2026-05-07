@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const CampusPage = () => {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-green-50 via-white to-blue-50 font-playful">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-br from-green-100 via-yellow-50 to-blue-100 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-30">
@@ -72,7 +72,7 @@ const CampusPage = () => {
       </section>
 
       {/* Facility Tour Section */}
-      <section className="py-20 bg-gray-50 px-4">
+      <section className="py-20 bg-gradient-to-r from-green-50 via-yellow-50 to-blue-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Explore Our Facilities</h2>

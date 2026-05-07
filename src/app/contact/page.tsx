@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-pink-50 font-playful">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-30">
@@ -66,7 +66,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-20 bg-gray-50 px-4">
+      <section className="py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 px-4">
         <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-blue-100">
           <div className="bg-blue-600 p-8 text-white text-center">
             <h2 className="text-3xl font-bold">Send us a Message</h2>

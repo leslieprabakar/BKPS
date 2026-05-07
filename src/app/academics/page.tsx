@@ -18,7 +18,7 @@ const AcademicsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-yellow-50 via-white to-orange-50 font-playful">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-br from-yellow-100 via-orange-50 to-pink-100 px-4 overflow-hidden">
         <div className="absolute top-0 left-0 p-10 opacity-30">
@@ -72,7 +72,7 @@ const AcademicsPage = () => {
       </section>
 
       {/* Sports & Physical Education Section */}
-      <section className="py-20 bg-blue-50 px-4">
+      <section className="py-20 bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div 

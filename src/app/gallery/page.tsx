@@ -8,7 +8,7 @@ const GalleryPage = () => {
   const categories = ["All", "Classroom", "Playground", "Events", "Arts & Crafts", "Sports"];
   
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-yellow-50 via-pink-50 to-purple-50 font-playful">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-br from-yellow-100 via-pink-100 to-purple-100 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-30">
@@ -91,7 +91,7 @@ const GalleryPage = () => {
       </section>
 
       {/* Video Showcase Section */}
-      <section className="py-20 bg-pink-50 px-4">
+      <section className="py-20 bg-gradient-to-r from-pink-50 via-purple-50 to-yellow-50 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-800 mb-12">Featured School Tour</h2>
           <div className="aspect-video bg-gray-300 rounded-3xl overflow-hidden shadow-2xl border-8 border-white relative">

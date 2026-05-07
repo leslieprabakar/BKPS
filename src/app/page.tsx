@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white px-4">
+      <section className="py-20 bg-gradient-to-b from-white via-blue-50 to-purple-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4 font-playful">Why Parents Love Us ❤️</h2>
@@ -90,7 +90,7 @@ export default function Home() {
       </section>
 
       {/* Image Placeholder Section */}
-      <section className="py-20 bg-pink-50 px-4">
+      <section className="py-20 bg-gradient-to-br from-pink-50 via-yellow-50 to-blue-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4 font-playful">Glimpses of Happiness 📸</h2>
@@ -98,7 +98,14 @@ export default function Home() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[
+              { emoji: "🎨" },
+              { emoji: "🎭" },
+              { emoji: "🎪" },
+              { emoji: "🎯" },
+              { emoji: "🎲" },
+              { emoji: "🎸" }
+            ].map((item, i) => (
               <motion.div 
                 key={i}
                 initial={{ opacity: 0, scale: 0.8 }}
@@ -108,7 +115,7 @@ export default function Home() {
                 className="aspect-square bg-white rounded-3xl overflow-hidden shadow-md border-4 border-white group relative cursor-pointer"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-yellow-100 flex items-center justify-center">
-                  <span className="text-6xl">{[🎨, 🎭, 🎪, 🎯, 🎲, 🎸][i-1]}</span>
+                  <span className="text-6xl">{item.emoji}</span>
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-pink-500/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-4">
                   <span className="text-white font-bold text-lg">Happy Moments! ✨</span>

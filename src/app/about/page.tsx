@@ -33,7 +33,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-sans">
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-purple-50 font-playful">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-r from-purple-100 to-pink-100 px-4 overflow-hidden">
         <div className="absolute top-0 right-0 p-10 opacity-30">

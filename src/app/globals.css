@@ -68,3 +68,19 @@ button, a, input, textarea {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.bg-dots {
+  background-image: radial-gradient(circle, rgba(200, 200, 200, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 182, 193, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(173, 216, 230, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 218, 185, 0.2) 0%, transparent 50%);
+}
+
+.bg-soft-gradient {
+  background: linear-gradient(135deg, #fff5f5 0%, #f0f8ff 50%, #fff5f5 100%);
+}
