@@ -10,17 +10,20 @@ const GalleryPage = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Header Section */}
-      <section className="relative py-20 bg-gradient-to-br from-yellow-100 to-pink-100 px-4 overflow-hidden">
-        <div className="absolute top-0 right-0 p-10 opacity-20">
+      <section className="relative py-20 bg-gradient-to-br from-yellow-100 via-pink-100 to-purple-100 px-4 overflow-hidden">
+        <div className="absolute top-0 right-0 p-10 opacity-30">
           <Camera size={120} className="text-pink-400 animate-spin" style={{ animationDuration: '15s' }} />
         </div>
+        <div className="absolute top-10 left-10 text-5xl wiggle opacity-50">📷</div>
+        <div className="absolute bottom-10 right-20 text-4xl bounce-short opacity-50">🎞️</div>
+        <div className="absolute top-1/3 left-1/4 text-4xl animate-spin opacity-40">✨</div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-extrabold text-pink-600 mb-6"
+            className="text-5xl md:text-6xl font-extrabold text-pink-600 mb-6 font-playful"
           >
-            Our Happy Gallery
+            Our Happy Gallery 📸
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}

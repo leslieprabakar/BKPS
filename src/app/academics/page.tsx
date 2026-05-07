@@ -20,17 +20,20 @@ const AcademicsPage = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Header Section */}
-      <section className="relative py-20 bg-gradient-to-br from-yellow-100 to-orange-100 px-4 overflow-hidden">
-        <div className="absolute top-0 left-0 p-10 opacity-20">
+      <section className="relative py-20 bg-gradient-to-br from-yellow-100 via-orange-50 to-pink-100 px-4 overflow-hidden">
+        <div className="absolute top-0 left-0 p-10 opacity-30">
           <Trophy size={120} className="text-orange-400 animate-bounce" />
         </div>
+        <div className="absolute top-10 right-10 text-5xl spin-slow opacity-50">🏆</div>
+        <div className="absolute bottom-10 left-20 text-4xl wiggle opacity-50">📖</div>
+        <div className="absolute top-1/3 right-1/4 text-4xl bounce-short opacity-40">🎨</div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-extrabold text-orange-600 mb-6"
+            className="text-5xl md:text-6xl font-extrabold text-orange-600 mb-6 font-playful"
           >
-            Academics & Facilities
+            Academics & Facilities 📚
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}

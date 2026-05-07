@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Heart, Star, Smile } from 'lucide-react';
 
 const Footer = () => {
@@ -21,15 +22,24 @@ const Footer = () => {
               Children from every background learn together as one family!
             </p>
             <div className="flex gap-4">
-              <div className="p-2 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+              <motion.div 
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                className="p-2 bg-white rounded-full shadow-md hover:shadow-xl cursor-pointer"
+              >
                 <Heart className="text-pink-500 w-5 h-5" />
-              </div>
-              <div className="p-2 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.2, rotate: -360 }}
+                className="p-2 bg-white rounded-full shadow-md hover:shadow-xl cursor-pointer"
+              >
                 <Star className="text-yellow-500 w-5 h-5" />
-              </div>
-              <div className="p-2 bg-white rounded-full shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.2, rotate: 180 }}
+                className="p-2 bg-white rounded-full shadow-md hover:shadow-xl cursor-pointer"
+              >
                 <Smile className="text-blue-500 w-5 h-5" />
-              </div>
+              </motion.div>
             </div>
           </div>
           

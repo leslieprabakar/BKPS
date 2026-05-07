@@ -50,9 +50,9 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)} 
-              className="text-gray-600 hover:text-pink-500 p-2 rounded-lg"
+              className="text-gray-600 hover:text-pink-500 p-2 rounded-lg hover:bg-pink-100 transition-all"
             >
-              {isOpen ? <X /> : <Menu />}
+              {isOpen ? <X className="animate-spin" /> : <Menu className="animate-pulse" />}
             </button>
           </div>
         </div>

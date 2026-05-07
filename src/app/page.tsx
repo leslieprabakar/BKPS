@@ -64,17 +64,21 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: <BookOpen className="text-blue-500" />, title: "Creative Learning", desc: "Interactive lessons that spark imagination and curiosity.", color: "bg-blue-50" },
-              { icon: <Palette className="text-pink-500" />, title: "One Family", desc: "Children from all over India learn together as one big family.", color: "bg-pink-50" },
-              { icon: <Music className="text-purple-500" />, title: "Music & Dance", desc: "Classical dance (Bharatanatyam), folk songs from all regions, and fun rhymes.", color: "bg-purple-50" },
-              { icon: <Trophy className="text-yellow-500" />, title: "Yoga & Sports", desc: "Surya Namaskar, traditional games from all over India, and fun physical activities.", color: "bg-yellow-50" },
+              { icon: <BookOpen className="text-blue-500" />, title: "Creative Learning", desc: "Interactive lessons that spark imagination and curiosity.", color: "bg-blue-50", emoji: "📚" },
+              { icon: <Palette className="text-pink-500" />, title: "One Family", desc: "Children from all over India learn together as one big family.", color: "bg-pink-50", emoji: "🤝" },
+              { icon: <Music className="text-purple-500" />, title: "Music & Dance", desc: "Classical dance (Bharatanatyam), folk songs from all regions, and fun rhymes.", color: "bg-purple-50", emoji: "💃" },
+              { icon: <Trophy className="text-yellow-500" />, title: "Yoga & Sports", desc: "Surya Namaskar, traditional games from all over India, and fun physical activities.", color: "bg-yellow-50", emoji: "🏃" },
             ].map((feature, index) => (
               <motion.div 
                 key={index}
-                whileHover={{ y: -10 }}
-                className={`${feature.color} p-8 rounded-3xl shadow-sm border-2 border-transparent hover:border-white transition-all text-center`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                whileHover={{ y: -15, scale: 1.05, rotate: index % 2 === 0 ? 2 : -2 }}
+                className={`${feature.color} p-8 rounded-3xl shadow-sm border-2 border-transparent hover:border-white hover:shadow-2xl transition-all text-center relative overflow-hidden`}
               >
-                <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md">
+                <div className="absolute top-2 right-2 text-3xl opacity-30">{feature.emoji}</div>
+                <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-md hover:scale-110 transition-transform">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-3">{feature.title}</h3>
@@ -89,20 +93,27 @@ export default function Home() {
       <section className="py-20 bg-pink-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Glimpses of Happiness</h2>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4 font-playful">Glimpses of Happiness 📸</h2>
             <p className="text-gray-600">Capturing the most precious moments of our little learners</p>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="aspect-square bg-white rounded-3xl overflow-hidden shadow-md border-4 border-white group relative cursor-pointer">
-                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-400 font-medium">
-                  Image Placeholder {i}
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ scale: 1.1, rotate: 2 }}
+                className="aspect-square bg-white rounded-3xl overflow-hidden shadow-md border-4 border-white group relative cursor-pointer"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-yellow-100 flex items-center justify-center">
+                  <span className="text-6xl">{[🎨, 🎭, 🎪, 🎯, 🎲, 🎸][i-1]}</span>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-pink-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-                  <span className="text-white font-bold">Happy Moments!</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-pink-500/70 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-4">
+                  <span className="text-white font-bold text-lg">Happy Moments! ✨</span>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
           

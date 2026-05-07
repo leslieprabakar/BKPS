@@ -8,17 +8,20 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Header Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-100 to-purple-100 px-4 overflow-hidden">
-        <div className="absolute top-0 right-0 p-10 opacity-20">
-          <Mail size={120} className="text-blue-400 animate-pulse" />
+      <section className="relative py-20 bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 px-4 overflow-hidden">
+        <div className="absolute top-0 right-0 p-10 opacity-30">
+          <Mail size={120} className="text-blue-400 animate-bounce" />
         </div>
+        <div className="absolute top-10 left-10 text-5xl animate-spin opacity-50">📧</div>
+        <div className="absolute bottom-10 right-20 text-4xl wiggle opacity-50">📞</div>
+        <div className="absolute top-1/3 left-1/4 text-4xl bounce-short opacity-40">📍</div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-extrabold text-blue-600 mb-6"
+            className="text-5xl md:text-6xl font-extrabold text-blue-600 mb-6 font-playful"
           >
-            Contact Us
+            Contact Us 📱
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -35,16 +38,25 @@ const ContactPage = () => {
       <section className="py-20 px-4 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { icon: <Phone className="text-pink-500" />, title: "Call Us", detail: "+91 98765 43210", desc: "Mon-Sat: 9 AM - 5 PM", color: "bg-pink-50" },
-            { icon: <Mail className="text-blue-500" />, title: "Email Us", detail: "info@blessingkidsschool.in", desc: "Response within 24 hours", color: "bg-blue-50" },
-            { icon: <MapPin className="text-yellow-500" />, title: "Visit Us", detail: "No. 25, MG Road, Near Bus Stand, Puducherry - 605001", desc: "Open for tours by appointment", color: "bg-yellow-50" },
+            { icon: <Phone className="text-pink-500" />, title: "Call Us", detail: "+91 98765 43210", desc: "Mon-Sat: 9 AM - 5 PM", color: "bg-pink-50", emoji: "📞" },
+            { icon: <Mail className="text-blue-500" />, title: "Email Us", detail: "info@blessingkidsschool.in", desc: "Response within 24 hours", color: "bg-blue-50", emoji: "✉️" },
+            { icon: <MapPin className="text-yellow-500" />, title: "Visit Us", detail: "No. 25, MG Road, Near Bus Stand, Puducherry - 605001", desc: "Open for tours by appointment", color: "bg-yellow-50", emoji: "📍" },
           ].map((item, index) => (
             <motion.div 
               key={index}
-              whileHover={{ y: -10 }}
-              className={`p-8 rounded-3xl border-2 border-transparent hover:border-gray-200 ${item.color} shadow-sm text-center`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              whileHover={{ y: -15, scale: 1.05, rotate: index % 2 === 0 ? 2 : -2 }}
+              className={`p-8 rounded-3xl border-4 border-transparent hover:border-gray-200 ${item.color} shadow-lg hover:shadow-2xl text-center relative overflow-hidden`}
             >
-              <div className="flex justify-center mb-4">{item.icon}</div>
+              <div className="absolute top-2 right-2 text-4xl opacity-30">{item.emoji}</div>
+              <motion.div 
+                whileHover={{ scale: 1.2, rotate: 360 }}
+                className="flex justify-center mb-4 bg-white w-16 h-16 rounded-full items-center mx-auto shadow-md"
+              >
+                {item.icon}
+              </motion.div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">{item.title}</h3>
               <p className="text-lg font-semibold text-gray-700 mb-1">{item.detail}</p>
               <p className="text-gray-500 text-sm">{item.desc}</p>

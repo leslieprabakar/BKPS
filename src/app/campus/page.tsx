@@ -9,17 +9,20 @@ const CampusPage = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Header Section */}
-      <section className="relative py-20 bg-gradient-to-br from-green-100 to-blue-100 px-4 overflow-hidden">
-        <div className="absolute top-0 right-0 p-10 opacity-20">
-          <Sparkles size={120} className="text-green-400 animate-pulse" />
+      <section className="relative py-20 bg-gradient-to-br from-green-100 via-yellow-50 to-blue-100 px-4 overflow-hidden">
+        <div className="absolute top-0 right-0 p-10 opacity-30">
+          <Sparkles size={120} className="text-green-400 animate-spin" style={{ animationDuration: '6s' }} />
         </div>
+        <div className="absolute top-10 left-10 text-5xl bounce-short opacity-50">🌳</div>
+        <div className="absolute bottom-10 right-20 text-4xl wiggle opacity-50">🌸</div>
+        <div className="absolute top-1/3 right-1/4 text-4xl animate-spin opacity-40">☀️</div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-extrabold text-green-600 mb-6"
+            className="text-5xl md:text-6xl font-extrabold text-green-600 mb-6 font-playful"
           >
-            Our Beautiful Campus
+            Our Beautiful Campus 🏫
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}

@@ -36,16 +36,19 @@ const AboutPage = () => {
     <div className="min-h-screen bg-white font-sans">
       {/* Header Section */}
       <section className="relative py-20 bg-gradient-to-r from-purple-100 to-pink-100 px-4 overflow-hidden">
-        <div className="absolute top-0 right-0 p-10 opacity-20">
-          <Star size={120} className="text-yellow-400 animate-pulse" />
+        <div className="absolute top-0 right-0 p-10 opacity-30">
+          <Star size={120} className="text-yellow-400 animate-spin" style={{ animationDuration: '8s' }} />
         </div>
+        <div className="absolute top-20 left-10 text-6xl animate-bounce opacity-50">🌟</div>
+        <div className="absolute bottom-10 right-20 text-5xl animate-pulse opacity-50">🎉</div>
+        <div className="absolute top-1/3 left-1/4 text-4xl wiggle opacity-40">✨</div>
         <div className="max-w-7xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-extrabold text-purple-600 mb-6"
+            className="text-5xl md:text-6xl font-extrabold text-purple-600 mb-6 font-playful"
           >
-            About Our School
+            About Our School 🌈
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -62,10 +65,12 @@ const AboutPage = () => {
       <section className="py-20 px-4 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <motion.div 
-            whileHover={{ scale: 1.02 }}
-            className="p-8 rounded-3xl bg-blue-50 border-2 border-blue-100 shadow-sm"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.05, rotate: -1 }}
+            className="p-8 rounded-3xl bg-blue-50 border-4 border-blue-200 shadow-lg hover:shadow-2xl transition-all"
           >
-            <div className="bg-blue-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <div className="bg-gradient-to-r from-blue-400 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg hover:scale-110 transition-transform">
               <Target className="text-white" size={32} />
             </div>
             <h2 className="text-3xl font-bold text-blue-600 mb-4">Our Vision</h2>
@@ -75,10 +80,12 @@ const AboutPage = () => {
           </motion.div>
 
           <motion.div 
-            whileHover={{ scale: 1.02 }}
-            className="p-8 rounded-3xl bg-pink-50 border-2 border-pink-100 shadow-sm"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.05, rotate: 1 }}
+            className="p-8 rounded-3xl bg-pink-50 border-4 border-pink-200 shadow-lg hover:shadow-2xl transition-all"
           >
-            <div className="bg-pink-500 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <div className="bg-gradient-to-r from-pink-400 to-pink-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg hover:scale-110 transition-transform">
               <Heart className="text-white" size={32} />
             </div>
             <h2 className="text-3xl font-bold text-pink-600 mb-4">Our Mission</h2>
@@ -90,29 +97,33 @@ const AboutPage = () => {
       </section>
 
       {/* Leadership Messages Section */}
-      <section className="py-20 bg-gray-50 px-4">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-pink-50 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4">Messages from our Leaders</h2>
-            <div className="h-1.5 w-24 bg-purple-400 mx-auto rounded-full"></div>
+            <h2 className="text-4xl font-bold text-gray-800 mb-4 font-playful">Messages from our Leaders 👨‍👩‍👧</h2>
+            <div className="h-2 w-32 bg-gradient-to-r from-pink-400 to-purple-400 mx-auto rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {messages.map((leader, index) => (
               <motion.div 
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2 }}
-                className={`p-8 rounded-3xl border-2 ${leader.borderColor} ${leader.color} shadow-sm relative overflow-hidden`}
+                initial={{ opacity: 0, y: 30, rotate: index === 1 ? 2 : -2 }}
+                whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+                transition={{ delay: index * 0.15, type: "spring" }}
+                whileHover={{ scale: 1.05, y: -10 }}
+                className={`p-8 rounded-3xl border-4 ${leader.borderColor} ${leader.color} shadow-lg hover:shadow-2xl relative overflow-hidden`}
               >
-                <div className="absolute -top-4 -right-4 opacity-10">
-                  <Award size={100} className={leader.textColor} />
+                <div className="absolute -top-4 -right-4 opacity-20 text-8xl">
+                  {["🌟", "🎓", "💝"][index]}
                 </div>
                 <div className="relative z-10">
-                  <div className="w-20 h-20 bg-white rounded-full mb-4 shadow-md flex items-center justify-center text-2xl font-bold text-gray-400 border-2 border-gray-100">
-                    IMG
-                  </div>
+                  <motion.div 
+                    whileHover={{ scale: 1.1, rotate: 360 }}
+                    className="w-24 h-24 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mb-4 shadow-lg flex items-center justify-center text-4xl"
+                  >
+                    {["👨‍💼", "👨‍🏫", "👩‍🏫"][index]}
+                  </motion.div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-1">{leader.name}</h3>
                   <p className={`font-medium mb-4 ${leader.textColor}`}>{leader.role}</p>
                   <p className="text-gray-600 italic leading-relaxed">
