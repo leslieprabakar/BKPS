@@ -19,15 +19,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 font-sans">
+    <nav className="bg-white shadow-lg sticky top-0 z-50 font-playful border-b-4 border-pink-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="bg-yellow-400 p-2 rounded-full group-hover:rotate-12 transition-transform duration-300">
+              <div className="bg-gradient-to-r from-pink-400 to-purple-400 p-2 rounded-full group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
                 <GraduationCap className="text-white w-8 h-8" />
               </div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-orange-500 via-green-500 to-blue-500 bg-clip-text text-transparent font-comic">
+                <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent font-playful">
                 Blessing Kids Play School
               </span>
             </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link 
                 key={link.name} 
                 href={link.href} 
-                className="text-gray-600 hover:text-pink-500 font-medium transition-colors duration-200 rounded-full px-3 py-2 hover:bg-pink-50"
+                className="text-gray-700 hover:text-pink-600 font-bold transition-all duration-200 rounded-full px-4 py-2 hover:bg-pink-100 hover:scale-110"
               >
                 {link.name}
               </Link>

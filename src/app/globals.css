@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-baloo), cursive;
+  --font-mono: var(--font-baloo), cursive;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +22,49 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-baloo), cursive;
+}
+
+.font-playful {
+  font-family: var(--font-baloo), cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-baloo), cursive;
+  font-weight: 700;
+}
+
+button, a, input, textarea {
+  font-family: var(--font-baloo), cursive;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes bounce-short {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.wiggle:hover {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.bounce-short:hover {
+  animation: bounce-short 0.5s ease-in-out infinite;
+}
+
+.blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+.star-burst {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

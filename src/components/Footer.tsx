@@ -11,7 +11,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-pink-50 pt-12 pb-6 border-t-4 border-yellow-400 font-sans">
+    <footer className="bg-gradient-to-b from-pink-50 to-purple-50 pt-12 pb-6 border-t-4 border-pink-300 font-playful">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div className="space-y-4">
